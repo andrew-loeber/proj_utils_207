@@ -1,12 +1,9 @@
 import proj_ref
-from google.colab import auth
 import requests
 import os
 
 
-def get_account():
-    auth.authenticate_user()
-    gcloud_token = !gcloud auth print-access-token
+def get_account(gcloud_token):
     gcloud_tokeninfo = requests.get(
         'https://www.googleapis.com/oauth2/v3/tokeninfo?access_token=' + gcloud_token[0]
     ).json()
