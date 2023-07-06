@@ -2,19 +2,19 @@ import proj_ref
 import requests
 import os
 
-
-def get_account(gcloud_token):
-    gcloud_tokeninfo = requests.get(
-        'https://www.googleapis.com/oauth2/v3/tokeninfo?access_token=' + gcloud_token[0]
-    ).json()
-    return gcloud_tokeninfo['email'], gcloud_tokeninfo['email'].split('@')[0]
-    
     
 class GDriveInterface:
     
-    def __init__(self):
-        self.email, self.account = get_account()
+    def __init__(self, gcloud_token):
+        self.email, self.account = self.get_account(gcloud_token)
         self.shared_folder_path = self.get_shared_folder_path()
+
+    @staticmethod
+    def get_account(gcloud_token):
+        gcloud_tokeninfo = requests.get(
+            'https://www.googleapis.com/oauth2/v3/tokeninfo?access_token=' + gcloud_token[0]
+        ).json()
+        return gcloud_tokeninfo['email'], gcloud_tokeninfo['email'].split('@')[0]
         
     def get_shared_folder_path(self):
         return proj_ref.shared_folder[self.account]
