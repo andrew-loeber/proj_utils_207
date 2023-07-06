@@ -33,4 +33,6 @@ class GDriveInterface:
         path_list.append(proj_ref.dirs[dir_key]['path'])
         path_list.append(file_key + proj_ref.dirs[dir_key]['file_ext'])
         return os.path.join(*path_list)
-        
+
+    def join_to_shared(self, path):
+        return os.path.join(self.shared_folder_path, path)
