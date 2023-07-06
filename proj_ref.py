@@ -2,7 +2,7 @@ shared_folder = {
     'aloeber': '/content/drive/MyDrive/207-Project'    
     , 'aminaalavi': '/content/drive/MyDrive/207-Project'
     , 'hamsini.sankaran': '/content/drive/MyDrive/UCB-MIDS/SEM-2/MACHINE-LEARNING-207/207-Project'
-    , 'rachelgao': '/content/drive/MyDrive/207/207-Project'
+    , 'jgao1008': '/content/drive/MyDrive/207/207-Project'
 }
 
 files = {
