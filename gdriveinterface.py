@@ -30,8 +30,8 @@ class GDriveInterface:
     def get_sample_path(self, dir_key, file_key):
         path_list = []
         path_list.append(self.shared_folder_path)
-        path_list.append(proj_ref.dirs[key]['path'])
+        path_list.append(proj_ref.dirs[dir_key]['path'])
         path_list.append(file_key)
-        path_list.append(proj_ref.dirs[key]['file_ext'])
+        path_list.append(proj_ref.dirs[dir_key]['file_ext'])
         return os.path.join(*path_list)
         
