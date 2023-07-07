@@ -17,36 +17,29 @@ files = {
 dirs = {
     'orig_audio': {
         'path':       'BirdCLEF/train_audio'
-        , 'file_ext': '.ogg'
     }
     
     , 'train_audio': {
         'path':       'data/train/audio_files'
-        , 'file_ext': '.ogg'
     }
     
     , 'test_audio': {
         'path':       'data/test/audio_files'
-        , 'file_ext': '.ogg'
     }
     
     , 'train_npy_full': {
         'path':       'data/train/librosa_loaded'
-        , 'file_ext': '.npy'
     }
     
     , 'test_npy_full': {
         'path':       'data/test/librosa_loaded'
-        , 'file_ext': '.npy'
     }
     
     , 'train_npy_loud5s': {
         'path':       'data/train/librosa_loaded_loudest_5sec'
-        , 'file_ext': '.npy'
     }
     
     , 'test_npy_loud5s': {
         'path':       'data/test/librosa_loaded_loudest_5sec'
-        , 'file_ext': '.npy'
     }
 }
