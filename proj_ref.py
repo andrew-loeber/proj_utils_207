@@ -7,7 +7,7 @@ shared_folder = {
 
 files = {
     'taxonomy':             'BirdCLEF/eBird_Taxonomy_v2021.csv'
-    , 'orig_metadata':      'BirdCLEF/train_metadata.csv'
+    , 'orig_metadata':      'BirdCLEF/train_metadata_with_duration.csv'
     , 'sample_metadata':    'data/sample_metadata.csv'
     , 'species_metadata':   'data/species_metadata.csv'
     , 'train_metadata':     'data/train_metadata.csv'
